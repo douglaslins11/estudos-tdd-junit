@@ -3,6 +3,7 @@ package service;
 import model.Funcionario;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalDate;
 
 public class BonusService {
@@ -12,6 +13,6 @@ public class BonusService {
         if (valor.compareTo(new BigDecimal("1000")) > 0) {
             valor = BigDecimal.ZERO;
         }
-        return valor;
+        return valor.setScale(2, RoundingMode.HALF_UP);
     }
 }

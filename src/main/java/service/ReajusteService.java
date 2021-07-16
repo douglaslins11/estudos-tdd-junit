@@ -1,4 +1,7 @@
-package model;
+package service;
+
+import model.Desempenho;
+import model.Funcionario;
 
 import java.math.BigDecimal;
 

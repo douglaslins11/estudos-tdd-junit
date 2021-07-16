@@ -1,6 +1,6 @@
 import model.Desempenho;
 import model.Funcionario;
-import model.ReajusteService;
+import service.ReajusteService;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
